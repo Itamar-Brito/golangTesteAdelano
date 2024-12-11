@@ -1,7 +1,7 @@
 package domain
 
 type Client struct {
-	ID    int
-	Name  string
-	Phone string
+	ID    int    `json:"id" binding:"required"`
+	Name  string `json:"name" binding:"required"`
+	Phone string `json:"phone" binding:"required"`
 }
